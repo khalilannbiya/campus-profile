@@ -26,7 +26,7 @@ const GroupAchievement = () => {
     ]);
 
     return (
-        <div className="my-10 grid grid-cols-1 items-center justify-items-center gap-4 bg-primary px-4 py-20 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="my-10 flex flex-wrap items-center justify-center gap-6 bg-primary px-4 py-20">
             {achievements.map((achievement, index) => (
                 <AchievementCard
                     key={index}

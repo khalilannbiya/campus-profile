@@ -14,7 +14,7 @@ const GroupNews = () => {
         {
             date: '13 Desember 2022',
             title: 'Berita Kampus 2',
-            description: 'Deskripsi berita kedua dengan konten lainnya',
+            description: 'Deskripsi berita kedua dengan konten lainnya haowdhaowidhaowdhawpdjpdgkdpgkdprkgdporkgdpogdpjiosfjsoeifjsoiejfiojsefsoijfoesjoawijdoaijdoaidjoaidjjdoijojjsoefjsoifhsoefhesohfoeshfosiehofhs',
             image: 'https://images.unsplash.com/photo-1578877cc76d8.jpg',
         },
         {
@@ -26,11 +26,11 @@ const GroupNews = () => {
     ]);
 
     return (
-        <div className="mt-10">
+        <div className="mx-auto mt-10 max-w-7xl px-4 lg:px-0">
             <h1 className="py-10 text-center text-3xl font-bold">
                 Berita Campus
             </h1>
-            <div className="grid grid-cols-1 items-center justify-items-center gap-4 px-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="flex flex-wrap items-center justify-center gap-4">
                 {news.map((article, index) => (
                     <NewsCard
                         key={index}

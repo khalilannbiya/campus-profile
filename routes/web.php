@@ -18,6 +18,10 @@ Route::get('/home' , function() {
     return Inertia::render('Home');
 });
 
+Route::get('/all-news', function(){
+    return Inertia::render('AllNews');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
